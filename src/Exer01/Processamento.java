@@ -11,20 +11,20 @@ package Exer01;
  */
 public class Processamento {
     private CPU cpu;
-    private VGA vga;
+    private GPU gpu;
     private RAM ram;
     private HD hd;
 
     public void ligarPC(int nucleos, String modelo, int quantidade, int armazenamento) {
         cpu = new CPU(nucleos);
-        vga = new VGA(modelo);
+        gpu = new GPU(modelo);
         ram = new RAM(quantidade);
         hd = new HD(armazenamento);
     }
     
     public void imprimeDados(){
         System.out.println("Nucleos: "+cpu.getNucleos());
-        System.out.println("VGA: "+vga.getModelo());
+        System.out.println("GPU: "+gpu.getModelo());
         System.out.println("RAM: "+ram.getQuantidade()+"GB");
         System.out.println("Armazenamento: "+hd.getArmazenamento()+"GB");
     }

@@ -9,10 +9,10 @@ package Exer01;
  *
  * @author IFSC
  */
-public class VGA {
+public class GPU {
     private String modelo;
 
-    public VGA(String modelo) {
+    public GPU(String modelo) {
         this.modelo = modelo;
     }
     
